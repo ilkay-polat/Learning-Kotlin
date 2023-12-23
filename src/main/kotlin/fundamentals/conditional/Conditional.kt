@@ -1,4 +1,4 @@
-package fundamentals
+package fundamentals.conditional
 
 fun main() {
     val count = 6
