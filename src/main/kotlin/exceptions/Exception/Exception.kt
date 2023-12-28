@@ -7,6 +7,8 @@ fun main() {
         val num = nums[1]
     } catch (exception: Throwable) {
         println(exception.message)
+    } finally {
+        println("Inside finally")
     }
 
     throwException()
