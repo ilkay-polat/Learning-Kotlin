@@ -1,6 +1,6 @@
 package methods
 
-fun main(){
+fun main() {
     println("Started ...")
 
     val earth = Planet("Earth", 12742)
