@@ -2,7 +2,7 @@ package derivations
 
 open class SpaceBody(val name: String)
 open class Planet(name: String, diameter: Int) : SpaceBody(name) {
-    val radius: Int = diameter / 2
+    val radius = diameter / 2
     var population: Long
 
     init {
