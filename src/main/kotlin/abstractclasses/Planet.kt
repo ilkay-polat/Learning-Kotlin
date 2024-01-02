@@ -3,6 +3,13 @@ package abstractclasses
 abstract class SpaceBody(val name: String) {
     abstract fun calculateMotion()
 }
+
+class BlackHole(name: String) : SpaceBody(name) {
+    override fun calculateMotion() {
+        TODO("Not yet implemented")
+    }
+}
+
 open class Planet(name: String, diameter: Int) : SpaceBody(name) {
     val radius = diameter / 2
     var population: Long
