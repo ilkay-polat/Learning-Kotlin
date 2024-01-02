@@ -1,18 +1,18 @@
 package inlineclasses
 
 @JvmInline
-value class Score(val score: Int) {
+value class Score(val value: Int) {
     init {
-        if (score < 0 || score > 100) throw IllegalArgumentException()
+        require(!(value < 0 || value > 100))
     }
 }
 
 class Exam {
-    fun score(name: String, studentScore: Score) {
+    fun score(studentName: String, studentScore: Score) {
         // ...
     }
 
-    fun amendScore(id: Int, newScore: Score) {
+    fun amendScore(studentId: Int, newStudentScore: Score) {
         // ...
     }
 }
