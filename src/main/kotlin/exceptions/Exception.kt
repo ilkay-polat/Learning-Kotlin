@@ -1,4 +1,4 @@
-package exceptions.Exception
+package exceptions
 
 fun main() {
     val nums = arrayOf(5)
