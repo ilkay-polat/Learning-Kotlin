@@ -1,14 +1,15 @@
 package exceptions
 
 fun main() {
-    val nums = arrayOf(5)
+    val numbers = arrayOf(5)
 
     try {
-        val num = nums[1]
+        val number = numbers[1]
+        println("number is $number")
     } catch (exception: Throwable) {
         println(exception.message)
     } finally {
-        println("Inside finally")
+        println("finally block")
     }
 
     throwException()
