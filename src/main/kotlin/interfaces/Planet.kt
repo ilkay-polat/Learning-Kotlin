@@ -3,7 +3,7 @@ package interfaces
 abstract class SpaceBody(val name: String) {
     abstract fun calculateMotion()
 }
-open class Planet(name: String, diameter: Int, val logger: Logger) : SpaceBody(name) {
+open class Planet(name: String, diameter: Int, private val logger: Logger) : SpaceBody(name) {
     val radius = diameter / 2
     var population: Long
 

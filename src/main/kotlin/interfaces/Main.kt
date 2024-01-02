@@ -3,7 +3,7 @@ package interfaces
 fun main() {
     println("Started ...")
 
-    val logger = NullLogger()
+    val logger = StandartOutLogger()
 
     val earth = Planet("Earth", 12742, logger)
     println("Planet created: Name: ${earth.name}, Radius: ${earth.radius}, Population: ${earth.population}")
