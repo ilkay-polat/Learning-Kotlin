@@ -1,4 +1,4 @@
-package methods
+package classes.methods
 
 fun main() {
     println("Started ...")

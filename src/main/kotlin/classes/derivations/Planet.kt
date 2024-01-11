@@ -1,4 +1,4 @@
-package derivations
+package classes.derivations
 
 open class SpaceBody(val name: String)
 open class Planet(name: String, diameter: Int) : SpaceBody(name) {
